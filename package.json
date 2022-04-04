@@ -3,7 +3,7 @@
   "scripts": {
     "build": "tsc --build",
     "bundle": "ncc build src/index.ts -m -o dist/_bundle",
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/index.ts",
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn ./src/index.ts",
     "start": "node dist/index.js",
     "test": "jest --watch"
   },
