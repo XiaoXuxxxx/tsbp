@@ -5,7 +5,7 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'airbnb-base',
+    'google',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
