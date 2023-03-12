@@ -1,4 +1,4 @@
-import Everything from './truth/Everything';
+import Everything from '@/src/truth/Everything';
 
 const everything = new Everything();
 const isFrozen = everything.getIsFrozen();

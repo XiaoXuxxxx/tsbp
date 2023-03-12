@@ -1,4 +1,4 @@
-import Everything from './Everything';
+import Everything from '@/src/truth/Everything';
 
 describe('Everything will freeze', () => {
   const everything = new Everything();
