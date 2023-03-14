@@ -2,7 +2,9 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.preferences.quoteStyle": "single",
   "editor.codeActionsOnSave": {
+    "source.fixAll": true,
     "source.organizeImports": true,
-    "source.fixAll.eslint": true,
+    "source.sortMembers": true
   },
+  "editor.formatOnSave": true
 }
