@@ -1,13 +1,16 @@
-import {JestConfigWithTsJest, pathsToModuleNameMapper} from 'ts-jest';
+import type { Config } from 'jest';
+import { pathsToModuleNameMapper } from 'ts-jest';
+import { compilerOptions } from './tsconfig.json';
 
-const jestConfig: JestConfigWithTsJest = {
-  preset: 'ts-jest',
+const jestConfig: Config = {
   testEnvironment: 'node',
-
-  // it cannot import tsconfig.json file. nooooooooooooooo
+  coverageDirectory: 'coverage',
+  transform: {
+    '^.+\\.(t|j)sx?$': '@swc/jest'
+  },
   modulePaths: ['.'],
-  moduleNameMapper: pathsToModuleNameMapper({'@/*': ['*']}),
-  modulePathIgnorePatterns: ['<rootDir>/dist/'],
+  moduleNameMapper: pathsToModuleNameMapper(compilerOptions.paths),
+  modulePathIgnorePatterns: ['<rootDir>/dist/']
 };
 
 export default jestConfig;
