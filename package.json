@@ -3,11 +3,11 @@
   "scripts": {
     "build": "swc ./src -d ./dist/build/src --config-file .swcrc",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./src/index.ts",
+    "format": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "lint": "eslint . --ext .ts",
     "start": "node ./dist/build/src/index.js",
     "test": "jest --coverage",
-    "test:watch": "jest --watchAll",
-    "lint": "eslint . --ext .ts",
-    "format": "prettier --config .prettierrc \"src/**/*.ts\" --write"
+    "test:watch": "jest --watchAll"
   },
   "dependencies": {
     "@clack/prompts": "^0.6.3",
@@ -31,5 +31,6 @@
     "ts-node-dev": "^2.0.0",
     "tsconfig-paths": "^4.1.2",
     "typescript": "^5.0.2"
-  }
+  },
+  "packageManager": "pnpm@8.3.1"
 }
