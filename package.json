@@ -1,5 +1,5 @@
 {
-  "name": "all-new-tsbp",
+  "name": "tsbp",
   "scripts": {
     "build": "swc ./src -d ./dist/build/src --config-file .swcrc",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only ./src/index.ts",
