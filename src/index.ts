@@ -1,4 +1,4 @@
-import Everything from '@/src/Everything';
+import Everything from '@/src/Everything.js';
 
 const everything = new Everything();
 const isFrozen = everything.getIsFrozen();
