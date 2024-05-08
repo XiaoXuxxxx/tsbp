@@ -4,8 +4,9 @@
   "scripts": {
     "build": "rimraf build && tsc && tsc-alias",
     "dev": "tsx watch src/index.ts",
+    "format": "prettier . --write",
     "start": "node build/src/index.js",
-    "format": "prettier . --write"
+    "test": "vitest"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
@@ -14,6 +15,7 @@
     "rimraf": "^5.0.5",
     "tsc-alias": "^1.8.8",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
   }
 }
